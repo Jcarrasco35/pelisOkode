@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      pelisOkode
+    </ion-title>
+  </ion-toolbar>
+ </ion-header>
+ 
+ <ion-content onload="traerPeli2()">
+  <ion-searchbar animated (ionChange)="buscar($event)"></ion-searchbar>
+  
+  <div class="contenedor" id="contenedor" ></div>
+  <ion-button expand="block"  (click) = "traerPeli2()">Cargar Pelis</ion-button>
+  <div class="paginacion" >
+    <ion-button id="btnAnterior">Back</ion-button>
+    <ion-button id="btnSiguiente">Next</ion-button>
+  </div>
+ </ion-content>
